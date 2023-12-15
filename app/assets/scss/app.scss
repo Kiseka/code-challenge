@@ -1,0 +1,209 @@
+
+#profileProgress .progressbar-text{
+    background: #E6E5F5;
+    border-radius:50% 50% 51% 51% / 50% 50% 50% 50%; 
+    display: flex;
+    align-items:center;
+    font-weight: bold;
+    height: 65%;
+    width: 65%;
+    justify-content: center !important;
+}
+
+#profileProgress {
+    position: relative;
+}
+.circle-progress {
+  position: relative;
+}
+.timeline-item::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border: 3px;
+    border-radius: 50%;
+    z-index: 1;
+    justify-content: end;
+}
+.timeline-item.failed::before {
+    border: 3px solid #B71334;
+}
+.timeline-item.successful::before {
+    border: 3px solid #FFBF00;
+}
+.timeline-item.pending::before {
+    border: 3px solid #FCE74C;
+}
+
+.custom-radio{
+  input[type="radio"] {
+      display: none;
+    }
+  
+    input[type="radio"] + label {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+  
+    input[type="radio"] + label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px; /* this makes it rounded */
+      border: 2px solid #000000; /* this is the border color */
+      // background-color: #f3f4f6; /* this is the background color when checked */
+      border-color: #000000; /* this is the border color when checked */
+      opacity: .3;
+    }
+  
+    input[type="radio"]:checked + label:before {
+      background-color: #FFBF00; /* this is the background color when checked */
+      border-color: #FFBF00; /* this is the border color when checked */
+      opacity: 1;
+      // background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27%23fff%27 stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e") !important;
+      // background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e") !important;
+    }
+}
+
+.custom-check2{
+  input[type="checkbox"] {
+      display: none;
+    }
+  
+    input[type="checkbox"] + label {
+      position: relative;
+      padding-left: 30px;
+      cursor: pointer;
+    }
+  
+    input[type="checkbox"] + label:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 5px; /* this makes it rounded */
+      border: 2px solid #000000; /* this is the border color */
+      // background-color: #f3f4f6; /* this is the background color when checked */
+      border-color: #000000; /* this is the border color when checked */
+      opacity: .3;
+    }
+  
+    input[type="checkbox"]:checked + label:before {
+      background-color: #FFBF00; /* this is the background color when checked */
+      border-color: #FFBF00; /* this is the border color when checked */
+      opacity: 1;
+      // background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27%23fff%27 stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e") !important;
+      background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e") !important;
+    }
+}
+
+
+.custom-check{
+    input[type="checkbox"] {
+        display: none;
+      }
+    
+      input[type="checkbox"] + label {
+        position: relative;
+        padding-left: 30px;
+        cursor: pointer;
+      }
+    
+      input[type="checkbox"] + label:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px; /* this makes it rounded */
+        border: 2px solid #cbd5e0; /* this is the border color */
+        background-color: #fff; /* this is the background color when checked */
+        border-color: #fff; /* this is the border color when checked */
+        opacity: .3;
+      }
+    
+      input[type="checkbox"]:checked + label:before {
+        background-color: #FFBF00; /* this is the background color when checked */
+        border-color: #FFBF00; /* this is the border color when checked */
+        opacity: 1;
+        // background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27%23fff%27 stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e") !important;
+        background-image: url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 20 20%27%3e%3cpath fill=%27none%27 stroke=%27%23000%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27 stroke-width=%273%27 d=%27M6 10l3 3l6-6%27/%3e%3c/svg%3e") !important;
+      }
+}
+
+
+.custom-toggle{
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 17px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    left: -4px;
+    bottom: -1px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+
+  }
+
+  
+  input:checked + .slider {
+    background-color: #e19238;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #e19238;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(24px);
+    -ms-transform: translateX(24px);
+    transform: translateX(24px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+}
